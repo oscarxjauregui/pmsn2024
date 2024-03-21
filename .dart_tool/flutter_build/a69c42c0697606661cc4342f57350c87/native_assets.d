@@ -1,0 +1,1 @@
+ C:\\Users\\oscar\\Downloads\\pmsn2024-main\ (1)\\pmsn2024-main\\.dart_tool\\flutter_build\\a69c42c0697606661cc4342f57350c87\\native_assets.yaml: 

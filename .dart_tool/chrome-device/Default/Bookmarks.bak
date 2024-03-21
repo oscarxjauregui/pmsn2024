@@ -1,0 +1,190 @@
+{
+   "checksum": "2c49137d3980cc5de83274bb4737fbe4",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13274123815819628",
+            "date_last_used": "0",
+            "guid": "5be62acf-a1d4-41ed-9d92-7e6989ed5eec",
+            "id": "7",
+            "name": "CargaAcademica.pdf",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "file:///C:/Users/oscar/Downloads/CargaAcademica.pdf"
+         }, {
+            "date_added": "13274378189533615",
+            "date_last_used": "0",
+            "guid": "6fda9cd2-0294-4e50-9eae-2703754406e5",
+            "id": "8",
+            "name": "Meet Equipo BD",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://meet.google.com/qnk-ktfp-dsf"
+         }, {
+            "date_added": "13274380168029894",
+            "date_last_used": "0",
+            "guid": "9f6b9bb9-4c51-4fcc-9e23-5780bbce88b5",
+            "id": "9",
+            "name": "Clases",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://classroom.google.com/u/0/h"
+         }, {
+            "date_added": "13274467328935068",
+            "date_last_used": "0",
+            "guid": "a2ed2594-f83f-4627-a8c5-35fb80f2e582",
+            "id": "10",
+            "name": "Meet - ujy-qzte-fvm",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://meet.google.com/ujy-qzte-fvm?authuser=0"
+         }, {
+            "date_added": "13211093972387720",
+            "date_last_used": "0",
+            "guid": "1865c1cc-7f78-44b2-a642-759df8fd69a4",
+            "id": "11",
+            "name": "ficha ITC",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://sii.itcelaya.edu.mx/admision/index.php?r=admision/ePrefichasDatosAlumnos/imprime_ficha"
+         }, {
+            "date_added": "13211093972778319",
+            "date_last_used": "0",
+            "guid": "2449c0b8-c33e-467b-9dff-448ce80f4f9f",
+            "id": "12",
+            "name": "Pase de ingreso al examen",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://registroenlinea.ceneval.edu.mx/RegistroLinea/estructura/paseIngresoCerrado.php"
+         }, {
+            "date_added": "13179372521396666",
+            "date_last_used": "0",
+            "guid": "57ac9eda-31ff-4cbb-8f27-c0c6c34b5c06",
+            "id": "13",
+            "name": "AndroidYa (con Android Studio)",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://www.tutorialesprogramacionya.com/javaya/androidya/androidstudioya/"
+         }, {
+            "date_added": "13211093972825190",
+            "date_last_used": "0",
+            "guid": "f0bce3b8-fa15-483c-92ac-72c9a6335949",
+            "id": "14",
+            "name": "Google Scholar",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://scholar.google.com/schhp?hl=en-US"
+         }, {
+            "children": [ {
+               "date_added": "13096820635369791",
+               "date_last_used": "0",
+               "guid": "f660b5f6-17c2-49bf-a762-2901e643dc9b",
+               "id": "16",
+               "name": "Acer",
+               "show_icon": false,
+               "source": "sync",
+               "type": "url",
+               "url": "http://www.acer.com/"
+            } ],
+            "date_added": "13289113808775460",
+            "date_last_used": "0",
+            "date_modified": "13289113808775460",
+            "guid": "8b3ed5c2-1001-4750-8794-d7c6ee1079b5",
+            "id": "15",
+            "name": "Acer",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "date_added": "13096820635369791",
+            "date_last_used": "0",
+            "guid": "a9aa6977-7c1e-4548-9575-1e05fc3f109c",
+            "id": "17",
+            "name": "Booking.com",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://www.booking.com/index.html?aid=379334"
+         }, {
+            "date_added": "13179372522838824",
+            "date_last_used": "0",
+            "guid": "74cea0f3-3ab4-4e84-b533-76ac2f507a58",
+            "id": "18",
+            "name": "Booking com",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://www.booking.com/index.html?aid=379334"
+         }, {
+            "date_added": "13290391576681965",
+            "date_last_used": "0",
+            "guid": "599c4ca0-3ff4-4123-bc23-83eb24012419",
+            "id": "19",
+            "name": "Tipos de Arquitecturas – Arquitectura de Computadoras",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://is603arquicom2016.wordpress.com/tipos-de-arquitecturas/"
+         }, {
+            "date_added": "13296467898593329",
+            "date_last_used": "0",
+            "guid": "a24607ca-f870-4495-aa47-8711d78be6ed",
+            "id": "20",
+            "name": "Corrección de Textos Online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.correctoronline.es/"
+         }, {
+            "date_added": "13319901117523499",
+            "date_last_used": "0",
+            "guid": "b7a35b3e-de96-4833-817c-3435430119d4",
+            "id": "21",
+            "name": "BibGuru",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://app.bibguru.com/p/2a5c5b96-9a45-45a7-bb56-682d24ab6122"
+         } ],
+         "date_added": "13354409150613737",
+         "date_last_used": "0",
+         "date_modified": "13319901117523499",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13354409150613739",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Otros favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13354409150613741",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos móviles",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCHQcGyCOAQAAEgAqGDdJQmFURk9xemtLMzQ4Q2F4d2FlQnc9PUgDoAYMEqkBCBMSpAEKHE8yanMvVy9seTBLR1NoVll4YVhzTkMrb0dhZz0SJDU5OWM0Y2EwLTNmZjQtNDEyMy1iYzIzLTgzZWIyNDAxMjQxORgAIAAoADDIud6UuTA4/ZrtwvMvQP2a7cLzL0ocQVVYcUtLRXhXUzdFdkxoY0hValFZNTdIY0NvPVogIh7/uytDWU5CQkM4b1EvWHpuSGVnaHNXQWtlUU5wcz1lhZh8lRKoAQgPEqMBChxaMWZYWHg1WU1jSlBBWWwrUVBaM2pJUkFlZDQ9EiQ4YjNlZDVjMi0xMDAxLTQ3NTAtODc5NC1kN2M2ZWUxMDc5YjUYACAAKAAwuc7I4e4vOJ7QyOHuL0Ce0Mjh7i9KHFNjL3loSkwxWjY3cWRHL3ZlWThkeFV3SGx0RT1aHyId/mh6SEFYeFRyN2tPL0l6TE1mVUtieWhuZ3VxST1lAAAAABKpAQgVEqQBChxvOE5oSnFDdG5jUUd2UGJVSUxZbjFxQXFOZUE9EiRiN2EzNWIzZS1kZTk2LTQ4MzMtODE3Yy0zNDM1NDMwMTE5ZDQYACAAKAAwhMGMuuEwOIrBjLrhMECKwYy64TBKHHNtTllpVVpPZVlxQTRncDdlSGJGU3dlZTI1Yz1aICIe/+5IQlluM3RySXRacS9IaFJNS05XZVZqTEhIcFU9ZSG5b4ESqQEIFBKkAQocRjJRdUhBSEJkcmduUGwwdHlqNXFRYXlPSGxRPRIkYTI0NjA3Y2EtZjg3MC00NDk1LWFhNDctODcxMWQ3OGJlNmVkGAAgACgAMP7EwvGxMDj3rqKUijBA966ilIowShx3OXNCdi9kbUhrS1FKdTE3aHVpejR0eEZ3eEE9WiAiHv/dUS93Z1JqWitXMys0OEFWSEFMTVhYY0xyVzQ4PWXWwF6eEqgBCA4SowEKHG53d2VLa2pqYTFpM01RM1BjNWN1YnJvK0VaRT0SJGYwYmNlM2I4LWZhMTUtNDgzYy05MmFjLTcyYzlhNjMzNTk0ORgAIAAoADC5zsjh7i8478/I4e4vQO/PyOHuL0ocZ01Lak5yRVFJUXYra0tMWGlEV09hTzQ3UGR3PVofIh39dGFCaFdIV3I3S2ROam0xVGNkODZVa0t1cm9zPWUAAAAAEqgBCA0SowEKHHVzUmo5bnF6TVdlQ2QyalgvcWxUM0xuREdQUT0SJDU3YWM5ZWRhLTMxZmYtNGNiYi04ZjI3LWMwYzZjMzRiNWMwNhgAIAAoADC5zsjh7i84sM/I4e4vQLDPyOHuL0ocZEQwM00zZWdmckJNZVBGQnFIMk95ODZLKzBzPVofIh36QUlCcE92MDczVXg1RWdUbXRyOTdEWTJZd1pJPWUAAAAAEqgBCAwSowEKHEUxV200MksrRDV2RTNzaU41enV3b01RR1RDZz0SJDI0NDljMGI4LWMzM2UtNDY3Yi05ZGZmLTQ0OGNlODBmNGY5ZhgAIAAoADC5zsjh7i8438/I4e4vQN/PyOHuL0ocYnNiUmpHUExkYnI2ZXFXcVk3RzZWNXpzeVBnPVofIh30Sm9mR1RGWlNSOVgxUktHRnhNcm5PaTZmTFRNPWUAAAAAEqgBCAoSowEKHFFGY1l1cFNYdHluUHZsNVNLOFJyRGd5SGphST0SJGEyZWQyNTk0LWY4M2YtNDYyNy1hOGM1LTM1ZmI4MGYyZTU4MhgAIAAoADCN5ZHe0TE43rvMuOwvQN67zLjsL0ocamtLUjNvaUpQWUJuK0dibXpaREZITHJLeHM4PVofIh3RU2lZcnRyc1ZrS2hTdHBiaHdnU1dKaW5qYm8wPWX0IvUbEqgBCAkSowEKHGxEbTNOTGo2ejdSL3AzTWZWQTNFdUVCWkRJYz0SJDlmNmI5YmI5LTRjNTEtNGZjYy05ZTIzLTU3ODBiYmNlODhiNRgAIAIoAjDFoumA4jE4z7vMuOwvQKGS6YDiMUocblBqNHY3RWNONFhEbHBJR2ZpcEc5cXFKRjlNPVofIh2iNEZlMDc3MGx4enFIUXJ4NkpUZXpObzdhTzZ3PWWD+Bh2EokBCAMShAEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SJDA0NjgwOTBiLWEzMjMtNTI5Ny04ZmZhLWQyNTkyMGYwNjMzYxgAIAAoADDQ5fPUsDA4o7rMuOwvQKO6zLjsL0oceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPVoAZQAAAAASpwEIBxKiAQocSnRWVnVwa0NXUFI2anlLdG83U1hYNVFTUWdZPRIkNWJlNjJhY2YtYTFkNC00MWVkLTlkOTItN2U2OTg5ZWQ1ZWVjGAAgACgAMIjc6aLRLzjSusy47C9A0rrMuOwvShwrS0V6OEROTDVJN3AvNDRvR29BOGsxZnpDa2s9Wh4iHDE1TlZENjRRQlNHYmVQRHE0Vm1rTXc2c1BEVT1ld3BsoxKoAQgREqMBChxlNTdyQzYzMFY2MkVTZkk2bVVicEpLRjR6R1k9EiRhOWFhNjk3Ny03YzFlLTQ1NDgtOTU3NS0xZTA1ZmMzZjEwOWMYACAAKAAwuc7I4e4vOMDPyOHuL0DAz8jh7i9KHDdWWVBNNDQwUGhELzFTYXdXVGJUZW1oQ0lJcz1aHyId/24xenFMZ0FiVWEyZFZRY0FYZm03N0NLYTBLVT1lAAAAABKJAQgBEoQBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ5YzI0NzZiZi0zZmM1LTU1NTgtYWJkNS0xOTBlMDg3MDcyNGIYACAAKAAw0OXz1LAwOKa5zLjsL0Cmucy47C9KHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAEokBCAIShAEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDkwZWZjYWQwLTJhZGMtNTc3ZS1hMTdiLWRhMzNmMDU0MWE4MRgAIAAoADDQ5fPUsDA4trnMuOwvQLa5zLjsL0ocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAAASqAEIEhKjAQocZWh5VnFva1JTemVCS05UQ3l4TUQrYTUzL2EwPRIkNzRjZWEwZjMtM2FiNC00ZTg0LWI1MzMtNzZhYzJmNTA3YTU4GAAgACgAMLnOyOHuLziRz8jh7i9Akc/I4e4vShxFQkZoNjkrcGZoOEVDOEtLTUN2b201ZW9Nc1k9Wh8iHf93SFFlUUZlTWF6R2FlNDIwY2tjZFc3d0RGcEE9ZQAAAAASpwEIEBKiAQocY3ExZ2Zxdnp4N2M1c1I0emxKTitCb0NPbEdVPRIkZjY2MGI1ZjYtMTdjMi00OWJmLWE3NjItMjkwMWU2NDNkYzliGAAgACgAMLnOyOHuLzit0Mjh7i9ArdDI4e4vShx0eDJJNmFjWk8xYTlWZ0JGUzI5ZDAxaHpTYnc9Wh4iHDVrNFRzZ0ZTR0NrM09qSTRTN0lEMXArSVcyND1lAAAAABKoAQgLEqMBChxYS2N2MVJsejl1UXhRblY5QmxjU3hPSDhqL289EiQxODY1YzFjYy03Zjc4LTQ0YjItYTY0Mi03NTlkZjhmZDY5YTQYACAAKAAwuc7I4e4vOOLOyOHuL0Dizsjh7i9KHEFNWTd5STlDTUdZWnVqeFVIeFN4TXhhNGJ3ST1aHyId6HQvQUtHb0FGcFpYOU56bHJXRCtUWFVYM3IxRT1lAAAAABKnAQgIEqIBChx0T1NycGV3amFkRjhyQys0YTFsNkZpTkxTbmc9EiQ2ZmRhOWNkMi0wMjk0LTRlNTAtOWVhZS0yNzAzNzU0NDA2ZTUYACACKAIwxKLpgOIxOL+7zLjsL0ChkumA4jFKHHpmZi9mUlduVTFKYXUzeUJwM0tnMUluQjM4ST1aHiIcRFpmRmZFeTIySTQwZ0o2UTR5R1hrY1p1U0ZjPWX0IvUbMAA4AA==",
+   "version": 1
+}

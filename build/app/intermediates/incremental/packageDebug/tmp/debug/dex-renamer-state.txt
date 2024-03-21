@@ -1,0 +1,4 @@
+#Fri Mar 08 15:31:41 CST 2024
+base.0=C\:\\Users\\oscar\\Downloads\\pmsn2024-main (1)\\pmsn2024-main\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
