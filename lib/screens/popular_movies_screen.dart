@@ -88,19 +88,7 @@ class _PopularMoviesScreenState extends State<PopularMoviesScreen> {
                     tag: 'moviePoster_${movie.id}',
                     child: itemMovieWidget(movie.posterPath!),
                   ),
-                ); /*
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(0),
-                    child: FadeInImage(
-                      placeholder: AssetImage('images/loading.gif'),
-                      //width: 550,
-                      //height: 100,
-                      image: NetworkImage(
-                          "https://image.tmdb.org/t/p/w500/${snapshot.data![index].posterPath}"),
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                );*/
+                );
               },
             );
           } else {
@@ -119,3 +107,4 @@ class _PopularMoviesScreenState extends State<PopularMoviesScreen> {
     );
   }
 }
+

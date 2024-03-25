@@ -2,6 +2,7 @@ import 'dart:html';
 import 'dart:ui';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_rating_stars/flutter_rating_stars.dart';
@@ -139,6 +140,9 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
           duration: Duration(seconds: 2),
         ),
       );
+      Future.delayed(Duration(seconds: 1), () {
+        Navigator.pushNamed(context, '/movies');
+      });
     }).catchError((error) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
