@@ -24,24 +24,7 @@ class _PopularMoviesScreenState extends State<PopularMoviesScreen> {
   void initState() {
     super.initState();
     apiPopular = ApiPopular();
-    /*final db = FavoriteMoviesDatabase();
-    db.getFavoriteMovies().then((favoriteMoviesList) {
-      if (showFavoritesOnly) {
-        favoriteMovies = favoriteMovies + favoriteMoviesList;
-      }
-    });*/
   }
-
-  /*void _toggleFavoritesOnly() {
-    setState(() {
-      showFavoritesOnly = !showFavoritesOnly;
-    });
-  }*/
-
-  /*void _deteledb() {
-    final db = FavoriteMoviesDatabase();
-    db.getFavoriteMovies().then((value) => print(value));
-  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +43,7 @@ class _PopularMoviesScreenState extends State<PopularMoviesScreen> {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => FavoriteMoviesScreen(),
+                  builder: (context) => FavoritesMoviesScreen(),
                 ),
               );
             },
@@ -73,15 +56,16 @@ class _PopularMoviesScreenState extends State<PopularMoviesScreen> {
           //El snapshot trae cada elemento del arreglo (Es una lista del popular model)
           if (snapshot.hasData) {
             final moviesToShow = showFavoritesOnly
-            ? snapshot.data!.where((movie) => movie.isFavorite).toList()
-            : snapshot.data!;
+                ? snapshot.data!.where((movie) => movie.isFavorite).toList()
+                : snapshot.data!;
             return GridView.builder(
               //itemCount: snapshot.data!.length,
               //Se puede poner un .builder a un contenedor cuando no se cauntos elementos hay
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                childAspectRatio: .7,
-                mainAxisSpacing: 0,
+                crossAxisCount: 2, // Cambia esto según el número de columnas que desees
+                crossAxisSpacing: 10.0,
+                mainAxisSpacing: 10.0,
+                childAspectRatio: 0.7,
               ),
               itemCount: moviesToShow.length,
               itemBuilder: (context, index) {
@@ -101,9 +85,10 @@ class _PopularMoviesScreenState extends State<PopularMoviesScreen> {
                     );
                   },
                   child: Hero(
-                        tag: 'moviePoster_${movie.id}',
-                        child: itemMovieWidget(movie.posterPath!),
-                      ));/*
+                    tag: 'moviePoster_${movie.id}',
+                    child: itemMovieWidget(movie.posterPath!),
+                  ),
+                ); /*
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(0),
                     child: FadeInImage(

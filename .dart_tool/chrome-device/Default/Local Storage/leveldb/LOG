@@ -1,14 +1,16 @@
-2024/03/20-22:54:12.615 d74 Reusing MANIFEST C:\Users\oscar\AppData\Local\Temp\flutter_tools.e27f0a35\flutter_tools_chrome_device.e6cbb543\Default\Local Storage\leveldb/MANIFEST-000001
-2024/03/20-22:54:12.630 d74 Recovering log #23
-2024/03/20-22:54:12.635 d74 Reusing old log C:\Users\oscar\AppData\Local\Temp\flutter_tools.e27f0a35\flutter_tools_chrome_device.e6cbb543\Default\Local Storage\leveldb/000023.log 
-2024/03/20-22:54:12.639 d74 Delete type=0 #3
-2024/03/20-22:54:12.639 d74 Delete type=0 #4
-2024/03/20-22:54:12.640 d74 Delete type=0 #7
-2024/03/20-22:54:12.640 d74 Delete type=2 #8
-2024/03/20-22:54:12.640 d74 Delete type=0 #10
-2024/03/20-22:54:12.640 d74 Delete type=2 #11
-2024/03/20-22:54:12.641 d74 Delete type=0 #13
-2024/03/20-22:54:12.641 d74 Delete type=2 #14
-2024/03/20-22:54:12.641 d74 Delete type=0 #16
-2024/03/20-22:54:12.641 d74 Delete type=2 #17
-2024/03/20-22:54:12.641 d74 Delete type=0 #19
+2024/03/24-22:35:54.713 1784 Reusing MANIFEST C:\Users\oscar\AppData\Local\Temp\flutter_tools.6683fe38\flutter_tools_chrome_device.8345d630\Default\Local Storage\leveldb/MANIFEST-000001
+2024/03/24-22:35:54.776 1784 Recovering log #29
+2024/03/24-22:35:54.782 1784 Reusing old log C:\Users\oscar\AppData\Local\Temp\flutter_tools.6683fe38\flutter_tools_chrome_device.8345d630\Default\Local Storage\leveldb/000029.log 
+2024/03/24-22:35:54.795 1784 Delete type=0 #3
+2024/03/24-22:35:54.795 1784 Delete type=0 #4
+2024/03/24-22:35:54.795 1784 Delete type=0 #7
+2024/03/24-22:35:54.795 1784 Delete type=2 #8
+2024/03/24-22:35:54.795 1784 Delete type=0 #10
+2024/03/24-22:35:54.795 1784 Delete type=2 #11
+2024/03/24-22:35:54.796 1784 Delete type=0 #13
+2024/03/24-22:35:54.796 1784 Delete type=2 #14
+2024/03/24-22:35:54.796 1784 Delete type=0 #16
+2024/03/24-22:35:54.796 1784 Delete type=2 #17
+2024/03/24-22:35:54.796 1784 Delete type=0 #19
+2024/03/24-22:35:54.796 1784 Delete type=0 #23
+2024/03/24-22:35:54.796 1784 Delete type=0 #27

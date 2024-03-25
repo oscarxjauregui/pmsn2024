@@ -1,16 +1,17 @@
 import 'dart:html';
 import 'dart:ui';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_rating_stars/flutter_rating_stars.dart';
 import 'package:pmsn2024/model/popular_model.dart';
+import 'package:pmsn2024/model/session_model.dart';
 import 'package:pmsn2024/network/api_cast.dart';
 import 'package:pmsn2024/network/trailer.dart';
 import 'package:pmsn2024/services/favorites_firebase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
-
 
 class DetailMovieScreen extends StatefulWidget {
   final PopularModel movie;
@@ -27,14 +28,26 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
   bool isFavorite = false;
   bool isFavoriteColor = false;
   final FavoritesFirebase favoritesFirebase = FavoritesFirebase();
+  late String firebaseId; // Variable para almacenar el ID de Firebase
+  String? idx;
 
   @override
   void initState() {
     super.initState();
+    // Obtener el ID de Firebase al inicio del widget
+    _getMoviesData().then((moviesData) {
+      final movieData = moviesData.firstWhere(
+        (data) => data['title'] == widget.movie.title,
+        orElse: () => {'id': null},
+      );
+      setState(() {
+        idx = movieData['id'];
+        print('id: $idx');
+      });
+    });
     ApiTrailer().getTrailerVideoKey(widget.movie.id!).then((key) {
       setState(() {
         trailerKey = key;
-        //isFavorite = widget.movie.isFavorite;
       });
     });
     ApiCast().getCast(widget.movie.id!).then((actors) {
@@ -69,31 +82,7 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
     SharedPreferences perfs = await SharedPreferences.getInstance();
     await perfs.setBool('favorite_color_${widget.movie.id}', isRed);
   }
-  /*void _toggleFavorite() {
-    setState(() {
-      isFavorite = !isFavorite;
-      widget.movie.isFavorite = isFavorite;
 
-      if (isFavorite) {
-        favoritesFirebase.insertar({
-          'id': widget.movie.id,
-          'title': widget.movie.title,
-          // Agrega otros campos que desees guardar
-        }).then((_) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Se agregó a favoritos: ${widget.movie.title}',
-              ),
-              duration: Duration(seconds: 2),
-            ),
-          );
-        });
-      } else {
-        // Aquí podrías implementar la lógica para eliminar la película de favoritos si lo deseas
-      }
-    });
-  }*/
   void _toggleFavorite() {
     setState(() {
       isFavorite = !isFavorite;
@@ -112,8 +101,17 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
     widget.movie.isFavorite = true;
     favoritesFirebase.insertar({
       'id': widget.movie.id,
-      'title': widget.movie.title,
+      'backdropPath': widget.movie.backdropPath,
+      'originalLanguage': widget.movie.originalLanguage,
+      'originalTitle': widget.movie.originalTitle,
+      'overview': widget.movie.overview,
+      'popularity': widget.movie.popularity,
       'posterPath': widget.movie.posterPath,
+      'releaseDate': widget.movie.releaseDate,
+      'title': widget.movie.title,
+      'voteAverage': widget.movie.voteAverage,
+      'voteCount': widget.movie.voteCount,
+      'isFavorite': widget.movie.isFavorite,
       // Agrega otros campos que desees guardar
     }).then((_) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -129,7 +127,7 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
 
   void _removeFromFavorites() {
     widget.movie.isFavorite = false;
-    favoritesFirebase.eliminar(widget.movie.id.toString()).then((_) {
+    favoritesFirebase.eliminar(idx ?? '').then((_) {
       setState(() {
         isFavorite = false;
       });
@@ -141,11 +139,25 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
           duration: Duration(seconds: 2),
         ),
       );
+    }).catchError((error) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'Error al eliminar de favoritos: ${widget.movie.title}',
+          ),
+          duration: Duration(seconds: 2),
+        ),
+      );
     });
+  }
+
+  Color _getIconColor(bool favorites) {
+    return favorites ? Colors.red : Colors.white;
   }
 
   @override
   Widget build(BuildContext context) {
+    String? sessionId = SessionManager().getSessionId();
     final voteAverage = widget.movie.voteAverage;
     return Scaffold(
       appBar: AppBar(
@@ -180,6 +192,7 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
             Hero(
               tag: 'moviePoster_${widget.movie.id}',
               child: Container(
+                height: MediaQuery.of(context).size.height,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(
@@ -216,17 +229,6 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          /*Text(
-                            widget.movie.title!,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontStyle: FontStyle.normal,
-                              fontSize: 25.0,
-                              decoration: TextDecoration.none,
-                            ),
-                          ),
-                          SizedBox(height: 10),*/
                           Container(
                             padding: EdgeInsets.only(right: 15.0),
                             child: Text(
@@ -341,5 +343,18 @@ class _DetailMovieScreenState extends State<DetailMovieScreen> {
         ),
       ),
     );
+  }
+
+  Future<List<Map<String, dynamic>>> _getMoviesData() async {
+    final QuerySnapshot snapshot =
+        await FirebaseFirestore.instance.collection('favorites').get();
+    final List<Map<String, dynamic>> moviesData = [];
+    snapshot.docs.forEach((doc) {
+      moviesData.add({
+        'id': doc.id,
+        'title': doc['title'],
+      });
+    });
+    return moviesData; // Devuelve la lista de datos de películas
   }
 }

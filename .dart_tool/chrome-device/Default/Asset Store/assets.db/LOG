@@ -1,12 +1,3 @@
-2024/03/20-22:54:26.291 15c4 Reusing MANIFEST C:\Users\oscar\AppData\Local\Temp\flutter_tools.e27f0a35\flutter_tools_chrome_device.e6cbb543\Default\Asset Store\assets.db/MANIFEST-000001
-2024/03/20-22:54:26.298 15c4 Recovering log #20
-2024/03/20-22:54:26.304 15c4 Reusing old log C:\Users\oscar\AppData\Local\Temp\flutter_tools.e27f0a35\flutter_tools_chrome_device.e6cbb543\Default\Asset Store\assets.db/000020.log 
-2024/03/20-22:54:26.308 15c4 Delete type=2 #3
-2024/03/20-22:54:26.308 15c4 Delete type=0 #3
-2024/03/20-22:54:26.309 15c4 Delete type=2 #6
-2024/03/20-22:54:26.309 15c4 Delete type=0 #7
-2024/03/20-22:54:26.309 15c4 Delete type=2 #9
-2024/03/20-22:54:26.311 15c4 Delete type=0 #10
-2024/03/20-22:54:26.311 15c4 Delete type=2 #12
-2024/03/20-22:54:26.311 15c4 Delete type=0 #13
-2024/03/20-22:54:26.313 15c4 Delete type=0 #16
+2024/03/24-20:13:25.114 1c88 Reusing MANIFEST C:\Users\oscar\AppData\Local\Temp\flutter_tools.5e75843d\flutter_tools_chrome_device.f7b0a62b\Default\Asset Store\assets.db/MANIFEST-000001
+2024/03/24-20:13:25.118 1c88 Recovering log #20
+2024/03/24-20:13:25.120 1c88 Reusing old log C:\Users\oscar\AppData\Local\Temp\flutter_tools.5e75843d\flutter_tools_chrome_device.f7b0a62b\Default\Asset Store\assets.db/000020.log 

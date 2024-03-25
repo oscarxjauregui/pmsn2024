@@ -23,5 +23,15 @@ class FavoritesFirebase {
   Future<void> eliminar(String id) async {
     return _favoritesCollection!.doc(id).delete();
   }
+
+  Future<void> eliminarnombre(String title) async {
+  final QuerySnapshot snapshot = await _favoritesCollection!.where('title', isEqualTo: title).get();
+  if (snapshot.docs.isNotEmpty) {
+    final docId = snapshot.docs.first.id;
+    return _favoritesCollection!.doc(docId).delete();
+  } else {
+    throw Exception('No se encontró ningún documento con el título proporcionado: $title');
+  }
+}
 }
 
